@@ -28,3 +28,12 @@ export SCM_CHECK=true
 
 # Load Bash It
 source $BASH_IT/bash_it.sh
+
+alias ls="ls --color=auto"
+
+if [[ "$TERM" = "screen" ]];then
+    TERM="$TERM-256color"
+fi
+
+alias ..="cd .."
+export CATALINA_HOME=$HOME/build/apache-tomcat-7.0.64/
