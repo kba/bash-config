@@ -36,4 +36,18 @@ if [[ "$TERM" = "screen" ]];then
 fi
 
 alias ..="cd .."
+alias gita="git add -A"
+alias gits="git status"
+alias gitd="git diff --color"
+alias gitl="git log --stat"
+alias gitc="git commit -v"
+alias fG="find .|egrep"
+alias G="egrep"
+alias sz="source ~/.bashrc"
+psa() {
+    ps aux |egrep $* 
+}
+
 export CATALINA_HOME=$HOME/build/apache-tomcat-7.0.64/
+
+export PATH="$HOME/bin:$PATH"
