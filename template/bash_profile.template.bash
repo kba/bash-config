@@ -51,3 +51,6 @@ psa() {
 export CATALINA_HOME=$HOME/build/apache-tomcat-7.0.64/
 
 export PATH="$HOME/bin:$PATH"
+
+# added by travis gem
+[ -f /home/kb/.travis/travis.sh ] && source /home/kb/.travis/travis.sh
