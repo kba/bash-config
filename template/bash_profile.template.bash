@@ -54,3 +54,8 @@ export PATH="$HOME/bin:$PATH"
 
 # added by travis gem
 [ -f /home/kb/.travis/travis.sh ] && source /home/kb/.travis/travis.sh
+
+# fzf fuzzy
+for localrc in $HOME/.fzf.bash ;do
+    [[ -e "$localrc" ]] && . "$localrc"
+done
