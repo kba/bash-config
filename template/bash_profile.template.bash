@@ -36,6 +36,7 @@ if [[ "$TERM" = "screen" ]];then
 fi
 
 alias ..="cd .."
+alias la="ls -la"
 alias gita="git add -A"
 alias gits="git status"
 alias gitd="git diff --color"
