@@ -29,7 +29,7 @@ export SCM_CHECK=true
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
-alias ls="ls --color=auto"
+# alias ls="ls --color=auto"
 
 if [[ "$TERM" = "screen" ]];then
     TERM="$TERM-256color"
@@ -49,12 +49,12 @@ psa() {
     ps aux |egrep $* 
 }
 
-export CATALINA_HOME=$HOME/build/apache-tomcat-7.0.64/
+# export CATALINA_HOME=$HOME/build/apache-tomcat-7.0.64/
 
 export PATH="$HOME/bin:$PATH"
 
-# added by travis gem
-[ -f /home/kb/.travis/travis.sh ] && source /home/kb/.travis/travis.sh
+# # added by travis gem
+# [ -f /home/kb/.travis/travis.sh ] && source /home/kb/.travis/travis.sh
 
 # fzf fuzzy
 for localrc in $HOME/.fzf.bash ;do
